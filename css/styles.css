@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  body{
+    font-size: 16px;
+    background-color: white;
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+  }
+  
+  /*Header*/
+  .navbar{
+     margin: 0;
+     border-radius: 0px;
+  }
+  
+.navbar-inverse a.navbar-brand{ /*Food LLC name*/
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+    
+  
+  /*main-content*/
+  .container{
+    width: 100%;
+    color: black;
+    height: 90%;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #top.text-center{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .row{
+    height: 90%;
+  }
+
+  div.category-tile{
+    position: relative;
+    overflow: hidden;
+    background-color: #a2ace5;
+    transition: all 0.3s;
+  }
+  
+  .category-tile span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px; 
+    margin-bottom: 10px;   
+  }
+  
+  .category-tile p{
+    width: 90%;
+    margin-bottom: 40px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    font-family: sans-serif;
+    color: white;
+  }
+   
+  
+  
+  /** Large devices only**/
+  /********** Large devices only **********/
+  @media (min-width: 1200px) {
+   #myNavbar.navbar-collapse.collapse{
+    display: none!important;
+   }
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #myNavbar.navbar-collapse.collapse{
+        display: none!important;
+    }
+    .col-md-6{
+      width: 50%;
+    }
+    .col-md-12{
+    width: 100%;
+    margin-top: 15px;
+    }
+  }
+  /********** Small devices only **********/
+  @media (min-width: 768px) and (max-width: 992px){
+    #myNavbar.navbar-collapse.collapse{
+        display: none!important;
+    }
+    .col-sm-12{
+      margin-top: 15px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .col-xs-12{
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
